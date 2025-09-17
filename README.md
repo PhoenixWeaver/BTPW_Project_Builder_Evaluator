@@ -51,35 +51,49 @@ go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Pro
 
 ---
 
-## 🎯 **Interactive Menu Options**
+## 🎯 **Interactive Menu Options (13 Comprehensive Options)**
 
-When you run the interactive mode, you'll see this menu:
+When you run the interactive mode, you'll see this complete menu:
 
 ```
-🎯 BT Project Diagrams - Interactive Mode
-==========================================
+🎯 BT Project Builder & Evaluator - Interactive Menu
+====================================================
 
-📋 Available Chart Systems:
-1. View All Current Charts (default)
-2. Generate All Charts
-3. Project Scanner (Dynamic Reports)
-4. Current Project Data Diagrams (Based on Real Functions)
-5. Schema ERD (Database Diagrams)
-6. Structure Diagrams (Project Analysis)
-7. Exit
+📋 Available Options:
+1.  Regenerate HTML Charts (default)
+2.  Generate All Charts
+3.  Project Scanner (Dynamic Reports)
+4.  AI Advisor Diagrams (Project Recreation Guidance)
+5.  Theory Model Diagrams (Educational Diagrams)
+6.  SVG ComGo Detail Model Diagrams (Instructor + AI)
+7.  Schema ERD (Database Diagrams)
+8.  Existing Diagrams (Current Project State Analysis)
+9.  Theory to Reality Analysis (Implementation Progress)
+10. Model to Reality Analysis (Implementation Progress)
+11. AI Advisor Function Creation & Execution Order Diagrams
+12. Class Model Builder Teaching Guides
+99. 🔍 Project Status Evaluation & Assessment
+0.  Exit
 
-🎯 Choose an option (1-7) or press Enter to View Current Charts:
+🎯 Choose an option (1-12, 99) or press Enter to Regenerate HTML Charts:
 ```
 
 ### **📋 What Each Option Does:**
 
-- **Option 1 (Default):** View all existing charts with file sizes and dates
+- **Option 1 (Default):** Regenerate HTML charts with file sizes and dates
 - **Option 2:** Generate all charts at once (function graphs, ERD, diagrams, reports)
 - **Option 3:** Generate dynamic reports based on current project functions
-- **Option 4:** Generate current project OG diagrams (shows real UserStore, UserHandler, etc.)
-- **Option 5:** Generate database ERD using SchemaSpy
-- **Option 6:** Generate educational structure diagrams
-- **Option 7:** Exit the program
+- **Option 4:** AI Advisor diagrams for project recreation guidance
+- **Option 5:** Theory model diagrams for educational purposes
+- **Option 6:** SVG ComGo detail model diagrams (Instructor + AI)
+- **Option 7:** Generate database ERD using SchemaSpy
+- **Option 8:** Existing diagrams showing current project state analysis
+- **Option 9:** Theory to reality analysis for implementation progress
+- **Option 10:** Model to reality analysis for implementation progress
+- **Option 11:** AI Advisor function creation & execution order diagrams
+- **Option 12:** Class Model Builder teaching guides
+- **Option 99:** 🔍 Project Status Evaluation & Assessment (78/100 current score!)
+- **Option 0:** Exit the program
 
 ---
 
@@ -87,22 +101,28 @@ When you run the interactive mode, you'll see this menu:
 
 ### **🚀 Interactive Mode (Recommended):**
 ```bash
-go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Project_builder/BTProjectScanner.go BenTran_Project_builder/SchemaERD.go BenTran_Project_builder/OGdiagrams.go BenTran_Project_builder/StructureDiagrams.go -interactive -out BTFlowcharts -root .
+# Run the complete BT Project Builder & Evaluator system
+go run -tags flowcharts BTProject_Builder_Evaluator.go -interactive -out BTFlowcharts -root .
 ```
 
 ### **🎯 Generate All Charts at Once:**
 ```bash
-go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Project_builder/BTProjectScanner.go BenTran_Project_builder/SchemaERD.go BenTran_Project_builder/OGdiagrams.go BenTran_Project_builder/StructureDiagrams.go -out BTFlowcharts -root .
+# Generate all 13 types of analysis and diagrams
+go run -tags flowcharts BTProject_Builder_Evaluator.go -out BTFlowcharts -root .
 ```
 
-### **🔍 Generate Only Dynamic Reports:**
+### **🔍 Project Evaluation Only:**
 ```bash
-go run -tags flowcharts BenTran_Project_builder/BTProjectScanner.go -out BTFlowcharts -root .
+# Run just the project evaluation system (Option 99)
+go run BTProject_Builder_Evaluator.go
+# Then choose option 99 for evaluation
 ```
 
-### **🎨 Generate Only Current Project OG Diagrams:**
+### **🎨 Generate Specific Analysis:**
 ```bash
-go run -tags flowcharts BenTran_Project_builder/OGdiagrams.go -out BTFlowcharts -root .
+# Generate only specific types of analysis
+go run -tags flowcharts BTProject_Builder_Evaluator.go -out BTFlowcharts -root .
+# Then choose specific options 1-12 from the menu
 ```
 
 ---
