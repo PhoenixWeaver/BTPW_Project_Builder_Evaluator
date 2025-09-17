@@ -5,6 +5,17 @@
 A comprehensive toolkit for analyzing, documenting, and evaluating Go HTTP server projects. This system provides interactive tools for generating flowcharts, reports, project analysis, and automated project evaluation with scoring systems.
 
 ---
+Dont read these long lines of jajaja things. Engineering IT should not always gotta be formal, structural and discreted :P
+This is like a side project or tool or toy to test my projects and lessons.
+I was like ... why dont I just do role play with AI and get them go banana as well as learning from each others :D.
+Sometimes, I was working with it/them like its/their classmate. Sometimes, I asked for it/them as a student. Sometimes, when it/them gave made aweful mistake, I would be its/their principal Phoenix.
+This is actually helpful for new comer and learner like me to learn the steps, proceduces, connections; to be able to rebuild, recreate the main project later, to be able to analyze the project; to be able to evaluate and advice later.
+Thou ... yeah the main thing is to have fun with our immaginary friends :D
+                                                              ~ Th3. Pho3nix. W3aver 
+---
+
+## 🚀 **Project Randomness**
+
 
 ## 📁 **Files in This Folder**
 
@@ -253,7 +264,7 @@ Your main project files are organized as follows:
 - **`BTcmd/`** - Command-line utilities
 - **`BTNotes/`** - Documentation and notes
 
-### **📂 BenTran_Project_builder Folder Contents**
+### **📂 PhoenixWeaver_BenTran_Project_builder Folder Contents**
 
 All the flowchart and analysis tools are organized in this folder:
 
@@ -451,7 +462,8 @@ go run -tags flowcharts BTProject_Builder_Evaluator.go -interactive -out BTFlowc
 
 ```
 🎓 Professor Model Builder's Magic Touch:
-├── ✅ Fixed evaluation system (from 0% to 78% accurate scoring!)
+├── ✅ Fixed evaluation system 
+(Thanks to Phoenix Weaver's tips on Quality and Evaluation Process :P !)
 ├── 🎯 Real-time project phase detection
 ├── 📊 Dynamic function discovery (141+ functions across 20+ files)
 ├── 🏆 Intelligent scoring with realistic thresholds
@@ -582,5 +594,5 @@ go run -tags flowcharts BTProject_Builder_Evaluator.go -interactive
 
 ---
 
-**Created by Professor Agent Trainer** 🎓  
+**Created by Principal Phoenix Weaver** 🎓  
 *Your Go learning companion - Now with 78/100 accuracy!* ⭐
