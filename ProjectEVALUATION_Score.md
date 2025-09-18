@@ -1,20 +1,16 @@
-Awesome since you are really excited on creating procedure, louyout plan model... and really good and detail .... 
-I have a very important and exciting task for you:
 
-- you will read the class instruction notes carefully step by step line by line 
-- then you will learn to do step by step, line by line,  function by function, file by file, folder by folder 
-> to be able to theoretically be able to recrate the project 
-to teach the studemt how to do it  step by step, line by line,  function by function, file by file, folder by folder 
-
+git remote add origin https://github.com/YOUR_USERNAME/BT_Project_Builder_Evaluator.git
+git branch -M main
+git push -u origin main
 ==============================================
 DESCRIPTION:
 
 What: This is a layout class notes which will help us to build a API Project in GOlang step by step
-How: First, each chapter will have a title of the sub project that we will work on. For example, "4.0 Scaffolding an API Project" in this chapter we will start to work on   
-Scaffolding an API Project which may take about 42 minutes and 33 seconds
-Next, 4.1 Creating the Go Project, we will start creating a Go project with the detail steps and guidances from the instructor about 11 mintutes (01:56:28 - 02:07:25) which 
+How: First, each chapter will have a title of the sub project that we will work on. For example, staging an API Project in this chapter we will start to work on   
+preparing for an API Project 
+Next, we will start creating a Go project with the detail steps and guidances from the instructor which would include
 - go mod init > module > .... 
-Next section is 4.2 Creating an HTTP Server, we will work on server > standard libarry > functions print > curl > host .....
+Next section is Creating an HTTP Server, we will work on server > standard libarry > functions print > curl > host .....
 ...
 Till finally, we can create data, route, application, middleware and complete the working project ... 
 
