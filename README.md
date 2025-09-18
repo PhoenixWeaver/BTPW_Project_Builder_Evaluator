@@ -7,12 +7,12 @@ A comprehensive toolkit for analyzing, documenting, and evaluating Go HTTP serve
 ---
 
 ## 🚀 **Project Randomness**
-*Don't read these long lines of jajaja things. Engineering IT should not always gotta be formal, structured and discrete :P*  
+*Don't read these long lines of jajaja things! Engineering IT should not always gotta be formal, structured and discrete :P*  
 *This is like a side project or tool or toy to test my projects and lessons.*  
-*I was like ... why don't I just do role play with AI and get them go banana as well as learning from each others :D.*  
-*Sometimes, I was working with it/them like its/their classmate. Sometimes, I asked for it/them as a student. Sometimes, when it/them gave made awful mistake, I would be its/their principal Phoenix.*  
-*This is actually helpful for newcomer and learner like me to learn the steps, procedures, connections; to be able to rebuild, recreate the main project later, to be able to analyze the project; to be able to evaluate and advise later.*  
-*Thou ... yeah the main thing is to have fun with our imaginary friends :D*  
+*I was like ... why don't I just do role play with AI and get them to go bananas as well as learning from each other :D.*  
+*Sometimes, I was working with it/them like its/their classmate. Sometimes, I asked for it/them as a student. Sometimes, when it/they made awful mistakes, I would be its/their principal Phoenix.*  
+*This is actually helpful for newcomers and learners like me to learn the steps, procedures, connections; to be able to rebuild, recreate the main project later, to be able to analyze the project; to be able to evaluate and advise later.*  
+*Though ... yeah the main thing is to have fun with our imaginary friends :D*  
                                                               *~ Th3. Pho3nix. W3aver*
 
 ## 📁 **Files in This Folder**
