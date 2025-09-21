@@ -28,6 +28,14 @@ A comprehensive toolkit for analyzing, documenting, and evaluating Go HTTP serve
 - **`README.md`** - This comprehensive guide
 - **`ANALYSIS_COMMANDS.md`** - Command reference and examples
 
+### **📊 Output Examples:**
+- **`OutputSamples/`** - Interactive HTML examples showing what the system produces
+  - AI Advisor function dependencies
+  - Database ERD Mermaid diagrams
+  - Architecture analysis examples
+  - Project evaluation assessments
+  - Theory2Reality analysis samples
+
 ---
 
 ## 🚀 **Quick Start Guide**
@@ -418,6 +426,7 @@ go run -tags flowcharts BTProject_Builder_Evaluator.go -interactive -out BTFlowc
 - **🏗️ Class Model Builder** - Complete teaching guides for project building
 - **📊 Theory to Reality Analysis** - Implementation progress tracking
 - **🎓 Professor Model Builder** - Educational diagrams and learning materials
+- **📊 Interactive Output Examples** - HTML samples showing system capabilities
 
 ## 🎮 **Live Project Stats**
 
