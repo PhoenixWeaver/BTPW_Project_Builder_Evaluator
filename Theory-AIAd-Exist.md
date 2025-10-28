@@ -1,3 +1,12 @@
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
+
 Excellent question! Let me analyze what functions are related to the current project state vs. AI advice vs. theory.
 
 Excellent! Now I can clearly categorize all the functions and files. Here's the complete reorganization plan:

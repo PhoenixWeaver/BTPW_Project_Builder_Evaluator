@@ -1,5 +1,11 @@
-//go:build flowcharts
-// +build flowcharts
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
 
 /*
 ===============================================================================
@@ -142,7 +148,7 @@ func ProjectEvaluator_AnalyzeStructure(projectRoot string) int {
 	score := 0
 
 	// Check for essential directories
-	essentialDirs := []string{"internal", "internal/app", "internal/api", "internal/store", "internal/database", "internal/middleware"}
+	essentialDirs := []string{"internal", "internal/app", "internal/api", "internal/store", "internal/middleware"}
 	for _, dir := range essentialDirs {
 		if _, err := os.Stat(filepath.Join(projectRoot, dir)); err == nil {
 			score += 15
@@ -150,7 +156,7 @@ func ProjectEvaluator_AnalyzeStructure(projectRoot string) int {
 	}
 
 	// Check for essential files
-	essentialFiles := []string{"main.go", "go.mod", "docker-compose.yml"}
+	essentialFiles := []string{"Ex11.go", "go.mod", "docker-compose.yml"}
 	for _, file := range essentialFiles {
 		if _, err := os.Stat(filepath.Join(projectRoot, file)); err == nil {
 			score += 10
@@ -202,8 +208,11 @@ func ProjectEvaluator_DetermineProgress(projectRoot string) (string, int) {
 	phase := "Project Initialization"
 	completion := 0
 
-	// Check project foundation
+	// Check project foundation - look for main Go files
 	if _, err := os.Stat(filepath.Join(projectRoot, "main.go")); err == nil {
+		completion += 10
+		phase = "Application Foundation"
+	} else if _, err := os.Stat(filepath.Join(projectRoot, "Ex11.go")); err == nil {
 		completion += 10
 		phase = "Application Foundation"
 	}

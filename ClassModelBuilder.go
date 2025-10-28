@@ -1,5 +1,11 @@
-//go:build flowcharts
-// +build flowcharts
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
 
 /*
 ===============================================================================
@@ -52,8 +58,8 @@ func ClassModelBuilder_WriteCompleteProjectGuide(outDir string) error {
 		"    subgraph TeachingGuide[\"🎓 COMPLETE PROJECT TEACHING GUIDE\"]\n" +
 		"        %% Phase 1: Project Foundation\n" +
 		"        subgraph Phase1[\"🏗️ PHASE 1: PROJECT FOUNDATION (15 minutes)\"]\n" +
-		"            T1[\"1.1 Create Project Directory<br/>📍 mkdir fem-project<br/>🎯 Set up workspace\"]\n" +
-		"            T2[\"1.2 Initialize Go Module<br/>📍 go mod init github.com/author/fem-project<br/>🎯 Create module\"]\n" +
+		"            T1[\"1.1 Create Project Directory<br/>📍 mkdir phoenixflix<br/>🎯 Set up workspace\"]\n" +
+		"            T2[\"1.2 Initialize Go Module<br/>📍 go mod init github.com/author/phoenixflix<br/>🎯 Create module\"]\n" +
 		"            T3[\"1.3 Create Main Entry Point<br/>📍 touch main.go<br/>🎯 Application entry\"]\n" +
 		"            T4[\"1.4 Create Internal Structure<br/>📍 mkdir internal<br/>🎯 Organize packages\"]\n" +
 		"        end\n\n" +
@@ -148,7 +154,7 @@ func ClassModelBuilder_WriteStepByStepWorkflow(outDir string) error {
 		"    subgraph Workflow[\"📋 STEP-BY-STEP DEVELOPMENT WORKFLOW\"]\n" +
 		"        %% Step 1: Project Setup\n" +
 		"        subgraph Step1[\"📁 STEP 1: PROJECT SETUP\"]\n" +
-		"            W1[\"1. Create Project Directory<br/>📍 mkdir fem-project<br/>🎯 Initialize workspace\"]\n" +
+		"            W1[\"1. Create Project Directory<br/>📍 mkdir phoenixflix<br/>🎯 Initialize workspace\"]\n" +
 		"            W2[\"2. Initialize Go Module<br/>📍 go mod init project<br/>🎯 Create module file\"]\n" +
 		"            W3[\"3. Create Basic Structure<br/>📍 touch main.go<br/>🎯 Entry point\"]\n" +
 		"            W4[\"4. Create Internal Directory<br/>📍 mkdir internal<br/>🎯 Package organization\"]\n" +
@@ -383,7 +389,7 @@ func ClassModelBuilder_WriteFolderStructureGuide(outDir string) error {
 		"    subgraph FolderGuide[\"📁 FOLDER-BY-FOLDER ORGANIZATION GUIDE\"]\n" +
 		"        %% Root Level\n" +
 		"        subgraph Root[\"🏠 ROOT LEVEL\"]\n" +
-		"            R1[\"fem-project/<br/>📍 Project root directory<br/>🎯 Main project folder<br/>📝 Contains: main.go, go.mod, docker-compose.yml\"]\n" +
+		"            R1[\"phoenixflix/<br/>📍 Project root directory<br/>🎯 Main project folder<br/>📝 Contains: main.go, go.mod, docker-compose.yml\"]\n" +
 		"        end\n\n" +
 		"        %% Internal Package\n" +
 		"        subgraph Internal[\"📦 INTERNAL PACKAGE\"]\n" +

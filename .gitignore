@@ -37,6 +37,13 @@ Thumbs.db
 BTFlowcharts/
 *.log
 *.tmp
+*.txt
+
+# Personal files (keep local, don't share publicly)
+GeneralClassNotes.txt
+publish2GitHub.go
+publish2GitHub_device.go
+*.ps1
 
 # Build artifacts
 /build/

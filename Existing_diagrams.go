@@ -1,5 +1,11 @@
-//go:build flowcharts
-// +build flowcharts
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
 
 /*
 ===============================================================================
@@ -97,6 +103,22 @@ func Existing_scanProject(rootDir string) (*ProjectStructure, error) {
 
 		// Skip test files for now (can be made configurable)
 		if strings.HasSuffix(path, "_test.go") {
+			return nil
+		}
+
+		// Skip diagram builder, analyzer, and test files - focus ONLY on main application
+		if strings.Contains(path, "BenTran_Project_builder") ||
+			strings.Contains(path, "BenTran_Project_tester") ||
+			strings.Contains(path, "BTcmd") {
+			return nil
+		}
+		//NOTE: the migrations folder is not included in the main application, but it is included in the project
+		// so we need to include it in the main application
+		// Only include main application files: Ex11.go and internal\, database\, migrations\ folders (Windows paths)
+		if !strings.Contains(path, "Ex11.go") &&
+			!strings.Contains(path, "internal\\") &&
+			!strings.Contains(path, "migrations\\") &&
+			!strings.Contains(path, "database\\") {
 			return nil
 		}
 
@@ -495,8 +517,8 @@ func Existing_WriteStoreConnectionsDiagram(outDir string, structure *ProjectStru
 	// Find main app
 	content += "    subgraph MainApp[\"Main App (Current Project)\"]\n"
 	for _, fn := range structure.Functions {
-		if fn.Name == "main" && strings.Contains(fn.File, "Ex10.go") {
-			content += fmt.Sprintf("        EX10[\"Ex10.go<br/>📍 %s:%d<br/>🎯 %s\"]\n", fn.File, fn.Line, fn.Purpose)
+		if fn.Name == "main" && strings.Contains(fn.File, "Ex11.go") {
+			content += fmt.Sprintf("        EX11[\"Ex11.go<br/>📍 %s:%d<br/>🎯 %s\"]\n", fn.File, fn.Line, fn.Purpose)
 			break
 		}
 	}
@@ -505,8 +527,8 @@ func Existing_WriteStoreConnectionsDiagram(outDir string, structure *ProjectStru
 	content += "    %% Critical Connections (Current Project)\n"
 	content += "    StoreLayer -->|\"🔴 CRITICAL<br/>Uses database connection\"| DB\n"
 	content += "    APILayer -->|\"🔴 CRITICAL<br/>Uses store interfaces\"| StoreLayer\n"
-	content += "    EX10 -->|\"Creates and initializes\"| StoreLayer\n"
-	content += "    EX10 -->|\"Creates and initializes\"| APILayer\n"
+	content += "    EX11 -->|\"Creates and initializes\"| StoreLayer\n"
+	content += "    EX11 -->|\"Creates and initializes\"| APILayer\n"
 	content += "    DOCKER -->|\"Hosts\"| DB\n"
 	content += "    MIGRATIONS -->|\"Creates tables\"| DB\n"
 	content += "```\n"

@@ -1,5 +1,11 @@
-//go:build flowcharts
-// +build flowcharts
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
 
 /*
 ===============================================================================
@@ -196,72 +202,3 @@ func AIAdCreate_Exe_WriteAllFunctionDiagrams(outDir string) error {
 	fmt.Println("✅ AI Advisor function creation and execution order diagrams generated successfully!")
 	return nil
 }
-
-///NOTE - This file is not used in the project builder.
-/* Absolutely! Great idea! Since we've now enhanced the `Existing_function_dependencies_simplified` to properly focus on the `internal` directory structure, let me update **option 11** (Function Creation & Execution Order Diagrams) to also reflect the actual internal directory structure of your project.
-
-## ✅ **UPDATED: Option 11 - Function Creation & Execution Order Diagrams**
-
-Perfect! I've successfully updated **option 11** to align with your actual `internal` directory structure. Here's what I've enhanced:
-
-### 🎯 **Major Updates Applied:**
-
-#### **1. Function Creation Order Diagram (Updated)**
-Now reflects the actual `internal/` directory structure:
-
-- **🏗️ PHASE 1: FOUNDATION** - `main.go`, `internal/database/database.go`, `internal/database/migrate.go`
-- **�� PHASE 2: STORE LAYER** - `internal/store/workout_store.go` (CRUD operations)
-- **�� PHASE 3: TOKEN LAYER** - `internal/tokens/token_store.go` (JWT operations)
-- **�� PHASE 4: USER STORE** - `internal/store/user_store.go` (User management)
-- **🛡️ PHASE 5: MIDDLEWARE** - `internal/middleware/auth.go`, `ownership.go`, `cors.go`
-- **🌐 PHASE 6: API LAYER** - `internal/api/workout_handler.go` (HTTP endpoints)
-- **🚀 PHASE 7: APPLICATION LAYER** - `internal/app/app.go`, `routes.go`, `server.go`
-
-#### **2. Function Execution Order Diagram (Updated)**
-Now shows the proper runtime sequence with internal directory structure:
-
-- **🚀 RUNTIME PHASE 1: APPLICATION STARTUP** - Main entry point and database setup
-- **💾 RUNTIME PHASE 2: STORE INITIALIZATION** - Initialize all stores (workout, user, token)
-- **��️ RUNTIME PHASE 3: MIDDLEWARE SETUP** - Setup authentication, CORS, ownership validation
-- **🌐 RUNTIME PHASE 4: HANDLER INITIALIZATION** - Initialize API handlers
-- **🏗️ RUNTIME PHASE 5: APPLICATION LAYER SETUP** - Application and route configuration
-- **🌐 RUNTIME PHASE 6: SERVER STARTUP** - Start the HTTP server
-- **📡 RUNTIME PHASE 7: REQUEST PROCESSING** - Per-request flow (CORS → Auth → Handler → Store → Response)
-
-#### **3. Enhanced Realism**
-- **Accurate File Paths**: All functions now show correct `internal/` directory paths
-- **Realistic Function Names**: Based on actual Go project patterns
-- **Proper Dependencies**: Shows how functions in different internal directories connect
-- **Better Organization**: 7 phases instead of 6, with more detailed breakdown
-
-#### **4. Improved Visual Flow**
-- **Clear Progression**: From foundation → stores → tokens → middleware → API → app
-- **Logical Connections**: Arrows show proper dependency relationships
-- **Color-Coded Phases**: Each phase has distinct visual styling
-- **Detailed Annotations**: Each function shows its purpose and file location
-
-### �� **What You'll See Now:**
-
-When you choose **option 11**, you'll get two comprehensive diagrams:
-
-1. **📅 Function Creation Order**: Shows the development sequence (which functions to build first, second, third, etc.)
-2. **⚡ Function Execution Order**: Shows the runtime sequence (which functions execute first, second, third, etc.)
-
-Both diagrams now accurately reflect your `internal/` directory structure and provide realistic guidance for:
-- **Development Planning**: What to build in what order
-- **Runtime Understanding**: How your application actually starts and processes requests
-- **Architecture Clarity**: How different layers in your `internal/` directory connect
-
-### �� **Ready to Test:**
-
-The system is running and ready! You can now:
-
-1. **Choose option 11**: "Function Creation & Execution Order Diagrams"
-2. **See the updated diagrams**: With proper internal directory structure
-3. **Get realistic guidance**: For both development and runtime understanding
-4. **View comprehensive flow**: From foundation to application layer
-
-The updated option 11 now provides much more accurate and useful guidance that aligns with your actual project structure!
-
-Would you like to test it now by choosing option 11, or would you prefer to test the enhanced option 8 (Existing Diagrams) first?
-*/

@@ -1,3 +1,12 @@
+/*===============================================================================
+🐦 ::: PhoenixFlix - Multi-Purpose Movies & Christian Streaming Platform :::
+🔥 with dual database architecture, WebAuthn authentication, and family-friendly streaming experience.
+===============================================================================
+Author: Ben Tran (https://github.com/thephoenixflix)
+Email: thephoenixflix@gmail.com
+Website: https://bit.ly/thephoenixflix
+===============================================================================*/
+
 /*
 ===============================================================================
 BT PROJECT DIAGRAMS GENERATOR - COMPREHENSIVE CHART SYSTEM
@@ -28,7 +37,7 @@ package main
 3) go run
 
 First-time setup (only once, if not already installed):
-cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\Ex3Goose"
+cd "C:\Users\Phoenix\Documents\GODEV\GO Courses\Ex3Goose"
 go mod tidy
 go install github.com/ofabry/go-callvis@latest
 go install github.com/loov/goda@latest
@@ -38,31 +47,9 @@ Generate flowcharts for this project (every time you want fresh graphs):
 Generate charts (only compiles the tool):
  wcharts.go -out flowcharts
 
-cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\Ex9"
-go run -tags flowcharts BTProjectDiagrams.go -out flowcharts
-
 Run the app (normal run):
-cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\Ex3Goose"
+cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\BT_Project_Builder_Evaluator"
 go run .
-
-Outputs:
-flowcharts\graph.svg (functions call graph)
-flowcharts\pkg-deps.svg (package dependencies)
-This uses the Ex3Goose folder only for this example; future projects can run the same two commands in their own directories.
-
->>>>>> Alternative
-Move the tool to tools/flowcharts/main.go
-go run ./tools/flowcharts -out flowcharts
-
-
-DETAIL FLOWCHART
-cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\Ex10"
-$env:PATH += ";C:\Program Files\Go\bin;C:\Users\Admin\go\bin;C:\Program Files\Graphviz\bin"
-$env:PLANTUML_JAR = "C:\Users\Admin\plantuml.jar"
-$env:DB_NAME = "postgres"
-$env:DB_USER = "postgres"
-$env:DB_PASS = "postgres"
-go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Project_builder/AIAd_diagrams.go BenTran_Project_builder/Theory_diagrams.go BenTran_Project_builder/Existing_diagrams.go BenTran_Project_builder/SchemaERD.go BenTran_Project_builder/SVGCharts.go BenTran_Project_builder/Theory2Reality.go -interactive -out BTFlowcharts -root .
 
 */
 
@@ -1123,86 +1110,3 @@ func createMermaidHTML(outDir string) {
 		fmt.Printf("Created and opened %s\n", filepath.Base(htmlFile))
 	}
 }
-
-/*
-
-# 1) Try to locate plantuml.jar
-$jar = Get-ChildItem -Path "C:\Program Files","C:\Program Files (x86)","$env:Admin" -Filter plantuml*.jar -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1 -Expand FullName
-
-# 2) If not found, DOWNLOAD the jar locally ++++++++++++++++++++++++++++++++++++++++
-if (-not $jar) {
-  $dest = "$env:USERPROFILE\plantuml.jar"
-  Invoke-WebRequest -Uri "https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar" -OutFile $dest
-  $jar = $dest
-}
-
-# 3) Set env and verify Java
-$env:PLANTUML_JAR = $jar
-java -jar "$env:PLANTUML_JAR" -version
-
-$env:PLANTUML_JAR = "C:\Users\Admin\plantuml.jar"
-
-   [System.Environment]::SetEnvironmentVariable("PLANTUML_JAR", "C:\Users\Admin\plantuml.jar", "User")
-
-#4) FOR SCHEMASPY_JAR
-4) SchemaSpy
-# Set the path to the SchemaSpy JAR file
-[System.Environment]::SetEnvironmentVariable("SCHEMASPY_JAR", "C:\tools\schemaspy\schemaspy.jar", "User")
-
-# Set the path to the PostgreSQL JDBC Driver JAR file
-[System.Environment]::SetEnvironmentVariable("PG_JDBC_JAR", "C:\tools\schemaspy\postgresql-driver.jar", "User")
-
-Write-Host "Environment variables SCHEMASPY_JAR and PG_JDBC_JAR have been set."
-Write-Host "IMPORTANT: Please close and reopen your terminal for the changes to take effect."
-
-5) Poweshell
-$env:DB_NAME="postgres"
-$env:DB_USER="postgres"
-$env:DB_PASS="postgres" # Use the password from your docker-compose.yml
-
-FINAL: DETAIL FLOWCHART
-cd "C:\Users\Admin\Documents\GODEV\GO Courses\CompleteGO\Ex10"
-$env:PATH="$env:PATH;C:\Program Files\Go\bin;C:\Users\Admin\go\bin;C:\Program Files\Graphviz\bin"
-$env:PLANTUML_JAR = "C:\Users\Admin\plantuml.jar"
-$env:DB_NAME="postgres"
-$env:DB_USER="postgres"
-$env:DB_PASS="postgres"
-$env:SCHEMASPY_JAR="C:\tools\schemaspy\schemaspy.jar"
-$env:PG_JDBC_JAR="C:\tools\schemaspy\postgresql-driver.jar"
-
-# Interactive Mode (Recommended)
-go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Project_builder/BTProjectScanner.go BenTran_Project_builder/SchemaERD.go BenTran_Project_builder/OGdiagrams.go BenTran_Project_builder/StructureDiagrams.go -interactive -out BTFlowcharts -root .
-# All Charts at Once
-go run -tags flowcharts BenTran_Project_builder/BTProjectDiagrams.go BenTran_Project_builder/BTProjectScanner.go BenTran_Project_builder/SchemaERD.go BenTran_Project_builder/OGdiagrams.go BenTran_Project_builder/StructureDiagrams.go -out BTFlowcharts
-
-Current File Structure:
-Function Distribution:
-BTProjectDiagrams.go (14 functions):
-main() - CLI entry point
-BTFlowcharts() - Main orchestrator
-ensureTool(), wrapInstallHint() - Tool management
-writeFileFromCmd(), findPlantUMLRenderer() - Command execution
-writeMermaidDiagram(), writeMermaidFileTree() - Mermaid generation
-indexOf(), readModulePath(), dirExists(), findModuleRoot() - Utilities
-openAllCharts(), createMermaidHTML() - File management
-BTProjectScanner.go (9 functions):
-Existing_scanProject() - Project scanning
-extractFunctions() - Function extraction
-generateUpdatedReports() - Report orchestration
-generateFunctionInventory() - Function inventory
-generateDynamicDevelopmentSequence() - Dynamic sequence
-generateProjectStatusReport() - Status report
-categorizeFunctions() - Function grouping
-determinePhase() - Phase determination
-getSimplePurpose() - Purpose analysis
-Generated Files (All Dynamic):
-Dynamic Reports (from Existing_diagrams.go):
-Existing_function_inventory.md - Comprehensive function list
-Existing_dynamic_development_sequence.mmd.md - Auto-generated development order
-Existing_project_status_report.md - Current project statistics
-Static Charts (from other files):
-All the existing educational diagrams and charts
-Usage:
-
-
-*/
